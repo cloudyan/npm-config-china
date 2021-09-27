@@ -1,5 +1,12 @@
-mirror-config-china
+npm-config-china
 ===========
+
+修改自: mirror-config-china
+
+```bash
+# 使用执行以下命令即可
+npx npm-config-china
+```
 
 [![NPM version](https://img.shields.io/npm/v/mirror-config-china.svg?style=flat-square)](https://www.npmjs.com/package/mirror-config-china)
 [![Travis](https://img.shields.io/travis/gucong3000/mirror-config-china.svg?&label=Linux)](https://travis-ci.org/gucong3000/mirror-config-china)
