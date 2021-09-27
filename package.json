@@ -45,6 +45,10 @@
     "type": "git",
     "url": "git+https://github.com/gucong3000/mirror-config-china.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "install": "node lib/install.js",
     "pretest": "eslint lib test *.js",
