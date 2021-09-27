@@ -1,7 +1,7 @@
 {
   "author": "gucong3000",
   "bin": {
-    "mirror-config-china": "lib/cli.js"
+    "npm-config-china": "lib/cli.js"
   },
   "bugs": {
     "url": "https://github.com/gucong3000/mirror-config-china/issues"
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "main": "./index.js",
-  "name": "mirror-config-china",
+  "name": "npm-config-china",
   "nyc": {
     "reporter": [
       "lcov",
