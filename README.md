@@ -1,7 +1,15 @@
 npm-config-china
 ===========
 
-修改自: mirror-config-china
+fork from mirror-config-china
+
+新增：
+
+- `geckodriver-binary-host-mirror`
+- `canvas-binary-host-mirror`
+- `canvas-prebuilt-binary-host-mirror`
+- `sharp-dist-base-url`
+- `swc_binary_site`
 
 ```bash
 # 使用执行以下命令即可
@@ -24,11 +32,12 @@ npx npm-config-china
 ## 安装
 
 ```bash
-npm i -g mirror-config-china --registry=https://registry.npm.taobao.org
+npm i -g npm-config-china --registry=https://registry.npm.taobao.org
 # 查看npm配置
 npm config list
 # 查看环境变量
 source ~/.bashrc && env
+source ~/.zshrc && env
 ```
 
 ## 参数
@@ -78,6 +87,7 @@ github.com/npm/npm/releases 镜像URL
 
 ## 安装成功后，针对以下组件的镜像URL，将被写入npm用户配置文件(~/.npmrc)中
 
+- [Canvas](https://www.npmjs.com/package/canvas)
 - [ChromeDriver](https://www.npmjs.com/package/chromedriver)
 - [Electron](https://www.npmjs.com/package/electron)
 - [git-win](https://www.npmjs.com/package/git-win)
