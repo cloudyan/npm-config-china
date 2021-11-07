@@ -1,28 +1,22 @@
 {
+  "name": "npm-config-china",
+  "main": "./index.js",
+  "version": "2.6.1",
+  "scripts": {
+    "install": "node lib/install.js",
+    "pretest": "eslint lib test *.js",
+    "report-coverage": "codecov",
+    "install-test": "npm run install && npm test",
+    "test": "mocha --no-timeouts"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "license": "MIT",
   "author": "gucong3000",
   "bin": {
     "npm-config-china": "lib/cli.js"
-  },
-  "bugs": {
-    "url": "https://github.com/gucong3000/mirror-config-china/issues"
-  },
-  "dependencies": {
-    "fs-extra": "^7.0.0",
-    "is-elevated": "^2.0.1"
-  },
-  "description": "Mirrors in China about node.js",
-  "devDependencies": {
-    "codecov": "^3.1.0",
-    "eslint": "^5.5.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "mocha": "^5.2.0",
-    "mock-fs": "^4.6.0",
-    "nyc": "^13.0.1",
-    "proxyquire": "^2.1.0"
   },
   "homepage": "https://github.com/gucong3000/mirror-config-china#readme",
   "keywords": [
@@ -31,9 +25,27 @@
     "china",
     "config"
   ],
-  "license": "MIT",
-  "main": "./index.js",
-  "name": "npm-config-china",
+  "bugs": {
+    "url": "https://github.com/gucong3000/mirror-config-china/issues"
+  },
+  "dependencies": {
+    "fs-extra": "10.0.0",
+    "is-elevated": "4.0.0"
+  },
+  "description": "Mirrors in China about node.js",
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "eslint": "8.1.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.1",
+    "eslint-plugin-standard": "5.0.0",
+    "mocha": "9.1.3",
+    "mock-fs": "5.1.1",
+    "nyc": "15.1.0",
+    "proxyquire": "^2.1.0"
+  },
   "nyc": {
     "reporter": [
       "lcov",
@@ -44,17 +56,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gucong3000/mirror-config-china.git"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "scripts": {
-    "install": "node lib/install.js",
-    "pretest": "eslint lib test *.js",
-    "report-coverage": "codecov",
-    "install-test": "npm run install && npm test",
-    "test": "mocha --no-timeouts"
-  },
-  "version": "2.6.1"
+  }
 }
