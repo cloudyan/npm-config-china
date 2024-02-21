@@ -1,7 +1,7 @@
 {
   "name": "npm-config-china",
   "description": "Mirrors in China about node.js",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "keywords": [
     "node",
     "mirros",
@@ -33,7 +33,6 @@
     "fs-extra": "^7.0.0",
     "is-elevated": "^2.0.1"
   },
-
   "devDependencies": {
     "codecov": "^3.1.0",
     "eslint": "^5.5.0",
