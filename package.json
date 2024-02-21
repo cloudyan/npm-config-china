@@ -1,16 +1,39 @@
 {
-  "author": "gucong3000",
+  "name": "npm-config-china",
+  "description": "Mirrors in China about node.js",
+  "version": "2.6.2",
+  "keywords": [
+    "node",
+    "mirros",
+    "china",
+    "config"
+  ],
+  "main": "./index.js",
   "bin": {
     "npm-config-china": "lib/cli.js"
   },
+  "scripts": {
+    "install": "node lib/install.js",
+    "pretest": "eslint lib test *.js",
+    "report-coverage": "codecov",
+    "install-test": "npm run install && npm test",
+    "test": "mocha --no-timeouts"
+  },
+  "author": "gucong3000",
+  "homepage": "https://github.com/gucong3000/mirror-config-china#readme",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gucong3000/mirror-config-china/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "dependencies": {
     "fs-extra": "^7.0.0",
     "is-elevated": "^2.0.1"
   },
-  "description": "Mirrors in China about node.js",
+
   "devDependencies": {
     "codecov": "^3.1.0",
     "eslint": "^5.5.0",
@@ -24,16 +47,6 @@
     "nyc": "^13.0.1",
     "proxyquire": "^2.1.0"
   },
-  "homepage": "https://github.com/gucong3000/mirror-config-china#readme",
-  "keywords": [
-    "node",
-    "mirros",
-    "china",
-    "config"
-  ],
-  "license": "MIT",
-  "main": "./index.js",
-  "name": "npm-config-china",
   "nyc": {
     "reporter": [
       "lcov",
@@ -44,17 +57,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gucong3000/mirror-config-china.git"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "scripts": {
-    "install": "node lib/install.js",
-    "pretest": "eslint lib test *.js",
-    "report-coverage": "codecov",
-    "install-test": "npm run install && npm test",
-    "test": "mocha --no-timeouts"
-  },
-  "version": "2.6.2"
+  }
 }
