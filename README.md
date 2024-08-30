@@ -130,7 +130,7 @@ github.com/npm/npm/releases 镜像URL
 
 ## 为项目生成镜像配置文件
 
-```
+```bash
 cd ~/my-project
 mirror-config-china --registry=https://registry.npmmirror.com
 ```
