@@ -8,9 +8,12 @@ fork from mirror-config-china
 - `canvas-binary-host-mirror`
 - `canvas-prebuilt-binary-host-mirror`
 - `sharp-dist-base-url`
-- `swc-binary-site`
 
 适配 Puppeteer20+ 国内源
+
+- `swc_binary_site`
+- `sharp`
+- `sharp-libvips`
 
 修复淘宝源域名问题
 
