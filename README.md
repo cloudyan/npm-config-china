@@ -23,7 +23,8 @@ fork from mirror-config-china
 ## 开发测试验证
 
 ```bash
-node ./index.js
+# node ./index.js
+node ./lib/cli.js
 
 code ~/.npmrc
 ```
