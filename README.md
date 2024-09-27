@@ -2,24 +2,32 @@
 
 fork from mirror-config-china
 
-新增：
-
-- `geckodriver-binary-host-mirror`
-- `canvas-binary-host-mirror`
-- `canvas-prebuilt-binary-host-mirror`
-- `sharp-dist-base-url`
-
-适配 Puppeteer20+ 国内源
-
-- `swc_binary_site`
-- `sharp`
-- `sharp-libvips`
-
-修复淘宝源域名问题
+## 修复淘宝源域名问题
 
 > 注: `mirror-config-china` 中的配置淘宝源域名已经停止服务了
 >
 > https://npm.taobao.org/ ==> https://npmmirror.com/
+
+## 新增配置项
+
+修改 `./lib/config.js`
+
+- `geckodriver-binary-host-mirror` 新增 20211027
+- `canvas-binary-host-mirror` 新增 20211027
+- `canvas-prebuilt-binary-host-mirror` 新增 20211027
+- `swc_binary_site` 新增 20211027
+- `sharp-dist-base-url` 移除 20240613
+- `sharp_binary_host` 新增 20240613
+- `sharp_libvips_binary_host` 新增 20240613
+
+## 开发测试验证
+
+```bash
+node ./index.js
+
+code ~/.npmrc
+```
+
 
 ## 使用
 
